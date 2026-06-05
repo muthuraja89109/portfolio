@@ -177,7 +177,7 @@ export default function Hero() {
           📄 Download Resume
         </a>
 
-        <a href="contact" className="contact-btn">
+        <a href="#contact" className="contact-btn">
           📩 Contact Me
         </a>
       </div>
