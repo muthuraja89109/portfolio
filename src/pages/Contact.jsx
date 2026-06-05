@@ -197,11 +197,11 @@ export default function Contact() {
           </div>
 
           <div style={styles.social}>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">
+            <a href="https://github.com/Muthuraja18" target="_blank" rel="noreferrer">
               <FaGithub style={styles.socialIcon} />
             </a>
 
-            <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/muthuraja-l-24232830b/" target="_blank" rel="noreferrer">
               <FaLinkedin style={styles.socialIcon} />
             </a>
           </div>
