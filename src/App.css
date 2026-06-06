@@ -6,12 +6,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background: #0f172a;
   color: white;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Sections */
@@ -28,47 +31,50 @@ section {
   justify-content: center;
   text-align: center;
 }
-.navbar{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
 
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
-  padding:10px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  background:#020617;
+  padding: 10px 8%;
 
-  z-index:1000;
+  background: #020617;
 
-  border-bottom:1px solid rgba(255,255,255,.1);
+  z-index: 1000;
+
+  border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
-.logo{
-  color:#38bdf8;
-  font-size:2rem;
-  font-weight:700;
+.logo {
+  color: #38bdf8;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.nav-links{
-  display:flex;
-  gap:25px;
-  list-style:none;
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
 }
 
-.nav-links a{
-  color:white;
-  text-decoration:none;
-  font-weight:500;
-  transition:.3s;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .3s;
 }
 
-.nav-links a:hover{
-  color:#38bdf8;
+.nav-links a:hover {
+  color: #38bdf8;
 }
+
 /* Profile Image */
 .profile-img {
   width: 220px;
@@ -167,9 +173,9 @@ h2 {
   font-size: 1.1rem;
 }
 
-/* =========================
-   MOBILE FRIENDLY ADDITIONS
-   ========================= */
+/* ==========================
+   TABLET RESPONSIVE
+   ========================== */
 
 @media (max-width: 768px) {
 
@@ -179,11 +185,14 @@ h2 {
 
   .navbar {
     padding: 12px 5%;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
   }
 
   .logo {
+    width: 100%;
+    text-align: center;
     font-size: 1.8rem;
   }
 
@@ -198,7 +207,7 @@ h2 {
   }
 
   #hero {
-    padding-top: 140px;
+    padding-top: 120px;
   }
 
   #hero h1 {
@@ -244,8 +253,15 @@ h2 {
   }
 }
 
-/* Small Phones */
+/* ==========================
+   MOBILE RESPONSIVE
+   ========================== */
+
 @media (max-width: 480px) {
+
+  section {
+    padding: 70px 4%;
+  }
 
   .logo {
     font-size: 1.5rem;
@@ -256,15 +272,16 @@ h2 {
   }
 
   .nav-links a {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   #hero {
-    padding-top: 160px;
+    padding-top: 130px;
   }
 
   #hero h1 {
     font-size: 1.7rem;
+    line-height: 1.3;
   }
 
   .job-title {
@@ -273,6 +290,7 @@ h2 {
 
   .hero-desc {
     font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .profile-img {
@@ -286,10 +304,15 @@ h2 {
 
   .card {
     padding: 15px;
+    border-radius: 12px;
   }
 
   .skill-list span {
     font-size: 0.8rem;
     padding: 7px 12px;
+  }
+
+  #contact p {
+    font-size: 0.95rem;
   }
 }
