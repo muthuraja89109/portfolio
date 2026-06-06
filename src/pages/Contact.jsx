@@ -29,8 +29,6 @@ export default function Contact() {
     });
   };
 
-  
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -102,13 +100,15 @@ export default function Contact() {
       alignItems: "center",
       gap: "12px",
       marginTop: "20px",
-      fontSize: "1rem"
+      fontSize: "1rem",
+      wordBreak: "break-word"
     },
 
     social: {
       display: "flex",
       gap: "20px",
-      marginTop: "30px"
+      marginTop: "30px",
+      flexWrap: "wrap"
     },
 
     socialIcon: {
@@ -155,7 +155,62 @@ export default function Contact() {
   return (
     <section id="contact" style={styles.section}>
 
+      <style>{`
+        @media (max-width: 768px) {
+          .contact-container {
+            grid-template-columns: 1fr !important;
+          }
+
+          .contact-title {
+            font-size: 2.2rem !important;
+          }
+
+          .contact-card {
+            padding: 20px !important;
+          }
+
+          .contact-heading {
+            font-size: 1.6rem !important;
+          }
+
+          .contact-item {
+            font-size: 0.95rem !important;
+          }
+
+          .social-icon {
+            font-size: 1.8rem !important;
+          }
+
+          .contact-section {
+            padding: 100px 5% !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .contact-title {
+            font-size: 1.8rem !important;
+          }
+
+          .contact-heading {
+            font-size: 1.4rem !important;
+          }
+
+          .contact-item {
+            font-size: 0.9rem !important;
+          }
+
+          .social-icon {
+            font-size: 1.6rem !important;
+          }
+
+          .contact-section {
+            padding: 90px 4% !important;
+          }
+        }
+      `}</style>
+
       <motion.h2
+        className="contact-title"
         style={styles.title}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -163,16 +218,21 @@ export default function Contact() {
         Contact Me
       </motion.h2>
 
-      <div style={styles.container}>
+      <div
+        className="contact-container"
+        style={styles.container}
+      >
 
-        {/* LEFT SIDE */}
         <motion.div
+          className="contact-card"
           style={styles.card}
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
         >
-
-          <h3 style={{ fontSize: "2rem", marginBottom: "20px" }}>
+          <h3
+            className="contact-heading"
+            style={{ fontSize: "2rem", marginBottom: "20px" }}
+          >
             Let's Connect 🚀
           </h3>
 
@@ -181,41 +241,39 @@ export default function Contact() {
             Generative AI Engineer, Python Developer, and Full Stack Developer.
           </p>
 
-          <div style={styles.contactItem}>
+          <div className="contact-item" style={styles.contactItem}>
             <FaEnvelope color="#38bdf8" />
             <span>muthuraja89109@gmail.com</span>
           </div>
 
-          <div style={styles.contactItem}>
+          <div className="contact-item" style={styles.contactItem}>
             <FaPhone color="#38bdf8" />
             <span>+91 9698469871</span>
           </div>
 
-          <div style={styles.contactItem}>
+          <div className="contact-item" style={styles.contactItem}>
             <FaMapMarkerAlt color="#38bdf8" />
             <span>Tamil Nadu, India</span>
           </div>
 
           <div style={styles.social}>
             <a href="https://github.com/Muthuraja18" target="_blank" rel="noreferrer">
-              <FaGithub style={styles.socialIcon} />
+              <FaGithub className="social-icon" style={styles.socialIcon} />
             </a>
 
             <a href="https://www.linkedin.com/in/muthuraja-l-24232830b/" target="_blank" rel="noreferrer">
-              <FaLinkedin style={styles.socialIcon} />
+              <FaLinkedin className="social-icon" style={styles.socialIcon} />
             </a>
           </div>
-
         </motion.div>
 
-        {/* FORM */}
         <motion.form
+          className="contact-card"
           style={styles.card}
           onSubmit={sendEmail}
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
         >
-
           <input
             type="text"
             name="name"
@@ -261,7 +319,6 @@ export default function Contact() {
               {error}
             </p>
           )}
-
         </motion.form>
 
       </div>
