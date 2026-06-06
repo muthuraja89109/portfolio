@@ -1,6 +1,7 @@
 export default function Experience() {
   return (
     <section
+      className="experience-section"
       style={{
         minHeight: "100vh",
         padding: "100px 8%",
@@ -9,7 +10,83 @@ export default function Experience() {
         color: "white"
       }}
     >
+      <style>{`
+        @media (max-width: 768px) {
+          .experience-section {
+            padding: 80px 5% !important;
+          }
+
+          .experience-title {
+            font-size: 2.2rem !important;
+            margin-bottom: 40px !important;
+          }
+
+          .experience-card {
+            padding: 25px !important;
+          }
+
+          .experience-role {
+            font-size: 1.6rem !important;
+          }
+
+          .experience-grid {
+            grid-template-columns: 1fr !important;
+          }
+
+          .experience-tag {
+            display: inline-block;
+            text-align: center;
+            padding: 10px 18px !important;
+            font-size: 0.9rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .experience-section {
+            padding: 70px 4% !important;
+          }
+
+          .experience-title {
+            font-size: 1.8rem !important;
+          }
+
+          .experience-card {
+            padding: 20px !important;
+            border-radius: 18px !important;
+          }
+
+          .experience-role {
+            font-size: 1.3rem !important;
+          }
+
+          .experience-company {
+            font-size: 1rem !important;
+          }
+
+          .experience-date {
+            font-size: 0.9rem !important;
+          }
+
+          .experience-description {
+            font-size: 0.95rem !important;
+            line-height: 1.7 !important;
+          }
+
+          .experience-item {
+            font-size: 0.9rem !important;
+            padding: 12px !important;
+          }
+
+          .experience-tag {
+            width: 100%;
+            display: block;
+            font-size: 0.85rem;
+          }
+        }
+      `}</style>
+
       <h2
+        className="experience-title"
         style={{
           textAlign: "center",
           fontSize: "3rem",
@@ -24,6 +101,7 @@ export default function Experience() {
       </h2>
 
       <div
+        className="experience-card"
         style={{
           maxWidth: "900px",
           margin: "0 auto",
@@ -37,6 +115,7 @@ export default function Experience() {
         }}
       >
         <h3
+          className="experience-role"
           style={{
             fontSize: "2rem",
             color: "#06b6d4",
@@ -47,6 +126,7 @@ export default function Experience() {
         </h3>
 
         <h4
+          className="experience-company"
           style={{
             color: "#8b5cf6",
             marginBottom: "10px"
@@ -56,6 +136,7 @@ export default function Experience() {
         </h4>
 
         <p
+          className="experience-date"
           style={{
             color: "#cbd5e1",
             marginBottom: "25px"
@@ -65,6 +146,7 @@ export default function Experience() {
         </p>
 
         <p
+          className="experience-description"
           style={{
             lineHeight: "1.8",
             color: "#e2e8f0",
@@ -79,6 +161,7 @@ export default function Experience() {
         </p>
 
         <div
+          className="experience-grid"
           style={{
             display: "grid",
             gridTemplateColumns:
@@ -96,6 +179,7 @@ export default function Experience() {
           ].map((item, index) => (
             <div
               key={index}
+              className="experience-item"
               style={{
                 padding: "15px",
                 borderRadius: "15px",
@@ -118,6 +202,7 @@ export default function Experience() {
           }}
         >
           <span
+            className="experience-tag"
             style={{
               padding: "12px 25px",
               borderRadius: "30px",
