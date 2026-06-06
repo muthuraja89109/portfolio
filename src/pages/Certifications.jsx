@@ -117,6 +117,7 @@ export default function Certifications() {
         .download-btn {
           display: flex;
           align-items: center;
+          justify-content: center;
           gap: 8px;
           padding: 10px 16px;
           border-radius: 8px;
@@ -146,9 +147,23 @@ export default function Certifications() {
           background: #0ea5e9;
         }
 
+        /* Tablet */
         @media (max-width: 768px) {
+          .certifications-section {
+            padding: 70px 15px;
+          }
+
           .section-title {
             font-size: 2rem;
+            margin-bottom: 40px;
+          }
+
+          .certification-grid {
+            gap: 20px;
+          }
+
+          .cert-card {
+            padding: 20px;
           }
 
           .cert-buttons {
@@ -157,7 +172,53 @@ export default function Certifications() {
 
           .view-btn,
           .download-btn {
-            justify-content: center;
+            width: 100%;
+          }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+          .certifications-section {
+            padding: 60px 12px;
+          }
+
+          .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 35px;
+          }
+
+          .certification-grid {
+            grid-template-columns: 1fr;
+            gap: 15px;
+          }
+
+          .cert-card {
+            padding: 18px;
+            border-radius: 12px;
+          }
+
+          .cert-icon {
+            font-size: 1.8rem;
+          }
+
+          .cert-card h3 {
+            font-size: 1rem;
+          }
+
+          .cert-card h4 {
+            font-size: 0.9rem;
+          }
+
+          .cert-card p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+          }
+
+          .view-btn,
+          .download-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 0.85rem;
           }
         }
       `}</style>
