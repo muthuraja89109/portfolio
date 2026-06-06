@@ -1,6 +1,11 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
 
@@ -8,42 +13,67 @@ export default function Navbar() {
         Muthuraja L
       </h2>
 
-      <ul className="nav-links">
+      <button
+        className="menu-toggle"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
 
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            Home
+          </Link>
         </li>
 
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>
+            About
+          </Link>
         </li>
 
         <li>
-          <Link to="/skills">Skills</Link>
+          <Link to="/skills" onClick={() => setMenuOpen(false)}>
+            Skills
+          </Link>
         </li>
 
         <li>
-          <Link to="/projects">Projects</Link>
+          <Link to="/projects" onClick={() => setMenuOpen(false)}>
+            Projects
+          </Link>
         </li>
 
         <li>
-          <Link to="/experience">Experience</Link>
+          <Link to="/experience" onClick={() => setMenuOpen(false)}>
+            Experience
+          </Link>
         </li>
 
         <li>
-          <Link to="/education">Education</Link>
+          <Link to="/education" onClick={() => setMenuOpen(false)}>
+            Education
+          </Link>
         </li>
 
         <li>
-          <Link to="/certifications">Certificates</Link>
+          <Link to="/certifications" onClick={() => setMenuOpen(false)}>
+            Certificates
+          </Link>
         </li>
 
         <li>
-          <Link to="/awards">Awards</Link>
+          <Link to="/awards" onClick={() => setMenuOpen(false)}>
+            Awards
+          </Link>
         </li>
 
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>
+            Contact
+          </Link>
         </li>
 
       </ul>
