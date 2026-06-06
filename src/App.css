@@ -316,3 +316,75 @@ h2 {
     font-size: 0.95rem;
   }
 }
+/* Hamburger Button */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #38bdf8;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* ==========================
+   MOBILE MENU
+   ========================== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 12px 5%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+    gap: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
+  #hero {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .menu-toggle {
+    font-size: 1.6rem;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+
+  #hero {
+    padding-top: 110px;
+  }
+}
