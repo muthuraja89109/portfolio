@@ -78,6 +78,7 @@ export default function Education() {
           border-radius: 50%;
           font-size: 1.5rem;
           z-index: 1;
+          flex-shrink: 0;
         }
 
         .timeline-content {
@@ -114,6 +115,86 @@ export default function Education() {
           margin-top: 8px;
           font-weight: bold;
           color: #22c55e;
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+          .education-section {
+            padding: 70px 15px;
+          }
+
+          .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+          }
+
+          .timeline::before {
+            left: 25px;
+          }
+
+          .timeline-icon {
+            width: 50px;
+            height: 50px;
+            font-size: 1.2rem;
+          }
+
+          .timeline-content {
+            margin-left: 15px;
+            padding: 18px;
+          }
+
+          .timeline-content h3 {
+            font-size: 1.1rem;
+          }
+
+          .timeline-content h4 {
+            font-size: 1rem;
+          }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+          .education-section {
+            padding: 60px 12px;
+          }
+
+          .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 35px;
+          }
+
+          .timeline::before {
+            left: 20px;
+          }
+
+          .timeline-item {
+            margin-bottom: 30px;
+          }
+
+          .timeline-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 1rem;
+          }
+
+          .timeline-content {
+            margin-left: 12px;
+            padding: 15px;
+          }
+
+          .timeline-content h3 {
+            font-size: 1rem;
+            line-height: 1.4;
+          }
+
+          .timeline-content h4 {
+            font-size: 0.9rem;
+          }
+
+          .timeline-content p,
+          .timeline-content span {
+            font-size: 0.85rem;
+          }
         }
       `}</style>
 
