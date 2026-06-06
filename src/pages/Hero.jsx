@@ -98,9 +98,16 @@ export default function Hero() {
           transform: translateY(-2px);
         }
 
-        @media (max-width: 600px) {
+        /* Tablet */
+        @media (max-width: 768px) {
+          .hero {
+            padding: 100px 20px 50px;
+            min-height: auto;
+          }
+
           h1 {
-            font-size: 2rem;
+            font-size: 2.2rem;
+            line-height: 1.3;
           }
 
           .job-title {
@@ -109,11 +116,64 @@ export default function Hero() {
 
           .hero-desc {
             font-size: 0.95rem;
+            line-height: 1.7;
+            max-width: 100%;
           }
 
           .profile-img {
-            width: 130px;
-            height: 130px;
+            width: 140px;
+            height: 140px;
+          }
+
+          .buttons {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .resume-btn,
+          .contact-btn {
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+          }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+          .hero {
+            padding: 120px 15px 40px;
+          }
+
+          h1 {
+            font-size: 1.8rem;
+          }
+
+          .job-title {
+            font-size: 1rem;
+          }
+
+          .hero-desc {
+            font-size: 0.9rem;
+            line-height: 1.6;
+          }
+
+          .profile-img {
+            width: 120px;
+            height: 120px;
+          }
+
+          .open-to-work {
+            font-size: 0.85rem;
+            padding: 6px 14px;
+          }
+
+          .resume-btn,
+          .contact-btn {
+            width: 100%;
+            max-width: 280px;
+            padding: 12px 18px;
+            font-size: 0.9rem;
           }
         }
       `}</style>
