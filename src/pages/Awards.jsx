@@ -114,6 +114,78 @@ export default function Awards() {
           font-size: 0.95rem;
           line-height: 1.4;
         }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+          .awards-section {
+            padding: 70px 15px;
+          }
+
+          .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+          }
+
+          .awards-grid {
+            gap: 20px;
+          }
+
+          .award-card {
+            padding: 20px;
+          }
+
+          .award-icon {
+            font-size: 2rem;
+          }
+
+          .award-card h3 {
+            font-size: 1.1rem;
+          }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+          .awards-section {
+            padding: 60px 12px;
+          }
+
+          .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 35px;
+          }
+
+          .awards-grid {
+            grid-template-columns: 1fr;
+            gap: 15px;
+          }
+
+          .award-card {
+            padding: 18px;
+            border-radius: 12px;
+          }
+
+          .award-icon {
+            font-size: 1.8rem;
+          }
+
+          .award-card h3 {
+            font-size: 1rem;
+          }
+
+          .award-card h4 {
+            font-size: 0.8rem;
+            padding: 4px 8px;
+          }
+
+          .college {
+            font-size: 0.85rem;
+          }
+
+          .award-card p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+          }
+        }
       `}</style>
 
       <motion.h2
