@@ -18,6 +18,15 @@ const projects = [
   },
 
   {
+    title: "AI Career Counselor",
+    desc:
+      "AI-powered career guidance platform that analyzes skills, interests, education and goals to provide personalized career recommendations, learning roadmaps and interview preparation guidance.",
+    tech: "Python, LLM, RAG, Groq API, Hugging Face",
+    link:
+      "https://huggingface.co/spaces/Muthuraja18/AI_Career_Counselor"
+  },
+
+  {
     title: "AI Call Assistant",
     desc:
       "Voice-enabled AI sales assistant with speech recognition, CRM integration, sentiment analysis and RAG.",
@@ -36,16 +45,16 @@ const projects = [
   {
     title: "AI Shopping Mall",
     desc:
-      "AI-powered shopping recommendation system with intelligent product suggestions and chatbot assistance.",
-    tech: "Python, FastAPI, AI Models",
+      "AI-powered shopping recommendation system with intelligent product suggestions, multilingual support and chatbot assistance.",
+    tech: "Python, FastAPI, MongoDB, AI Models",
     link: ""
   },
 
   {
-    title: "Bus Tracking & Prediction System",
+    title: "AI Interview Assessment System",
     desc:
-      "Real-time bus tracking platform with arrival time prediction using AI and location analytics.",
-    tech: "Python, Streamlit, Machine Learning",
+      "AI-powered interview platform with resume analysis, aptitude evaluation, coding rounds, HR assessment and communication scoring.",
+    tech: "Python, LLM, RAG, FastAPI",
     link: ""
   }
 ];
