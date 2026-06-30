@@ -8,7 +8,7 @@ export default function Education() {
       degree: "B.Tech Information Technology",
       institution: "Sethu Institute of Technology",
       year: "2022 - 2026",
-      score: "CGPA: 8.5",
+      score: "CGPA: 8.69",
     },
     {
       icon: <FaUniversity />,
