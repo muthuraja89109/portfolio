@@ -5,8 +5,9 @@ export default function Experience() {
       style={{
         minHeight: "100vh",
         padding: "100px 8%",
-        background: "linear-gradient(135deg,#0f172a,#111827,#1e1b4b)",
-        color: "white",
+        background:
+          "linear-gradient(135deg,#0f172a,#111827,#1e1b4b)",
+        color: "white"
       }}
     >
       <style>{`
@@ -90,127 +91,14 @@ export default function Experience() {
           textAlign: "center",
           fontSize: "3rem",
           marginBottom: "50px",
-          background: "linear-gradient(90deg,#06b6d4,#8b5cf6)",
+          background:
+            "linear-gradient(90deg,#06b6d4,#8b5cf6)",
           WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
+          WebkitTextFillColor: "transparent"
         }}
       >
-        Experience & Featured Project
+        Internship Experience
       </h2>
-
-      {/* ================= Internship ================= */}
-
-      <div
-        className="experience-card"
-        style={{
-          maxWidth: "900px",
-          margin: "0 auto 50px",
-          background: "rgba(255,255,255,0.05)",
-          backdropFilter: "blur(15px)",
-          border: "1px solid rgba(255,255,255,0.1)",
-          borderRadius: "25px",
-          padding: "40px",
-          boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
-        }}
-      >
-        <h3
-          className="experience-role"
-          style={{
-            fontSize: "2rem",
-            color: "#06b6d4",
-            marginBottom: "10px",
-          }}
-        >
-          AI Intern
-        </h3>
-
-        <h4
-          className="experience-company"
-          style={{
-            color: "#8b5cf6",
-            marginBottom: "10px",
-          }}
-        >
-          Infosys Springboard
-        </h4>
-
-        <p
-          className="experience-date"
-          style={{
-            color: "#cbd5e1",
-            marginBottom: "25px",
-          }}
-        >
-          December 2024 – February 2025
-        </p>
-
-        <p
-          className="experience-description"
-          style={{
-            lineHeight: "1.8",
-            color: "#e2e8f0",
-            marginBottom: "25px",
-          }}
-        >
-          Completed an Artificial Intelligence internship focused on
-          developing intelligent applications, learning AI concepts,
-          integrating APIs, and building real-world AI solutions using
-          modern software engineering practices.
-        </p>
-
-        <div
-          className="experience-grid"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
-            gap: "20px",
-          }}
-        >
-          {[
-            "Worked on AI & Machine Learning Projects",
-            "Developed LLM-based Applications",
-            "REST API Integration",
-            "Data Analysis & Visualization",
-            "Problem Solving & Debugging",
-            "Software Development Lifecycle",
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="experience-item"
-              style={{
-                padding: "15px",
-                borderRadius: "15px",
-                background: "rgba(255,255,255,0.05)",
-                border: "1px solid rgba(255,255,255,0.1)",
-                color: "#cbd5e1",
-              }}
-            >
-              ✓ {item}
-            </div>
-          ))}
-        </div>
-
-        <div
-          style={{
-            marginTop: "30px",
-            textAlign: "center",
-          }}
-        >
-          <span
-            className="experience-tag"
-            style={{
-              padding: "12px 25px",
-              borderRadius: "30px",
-              background: "linear-gradient(90deg,#06b6d4,#8b5cf6)",
-              fontWeight: "600",
-            }}
-          >
-            AI • LLMs • APIs • Data Analytics
-          </span>
-        </div>
-      </div>
-
-      {/* ================= Shopping Mall Project ================= */}
 
       <div
         className="experience-card"
@@ -222,38 +110,39 @@ export default function Experience() {
           border: "1px solid rgba(255,255,255,0.1)",
           borderRadius: "25px",
           padding: "40px",
-          boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
+          boxShadow:
+            "0 8px 32px rgba(0,0,0,0.3)"
         }}
       >
         <h3
           className="experience-role"
           style={{
             fontSize: "2rem",
-            color: "#22c55e",
-            marginBottom: "10px",
+            color: "#06b6d4",
+            marginBottom: "10px"
           }}
         >
-          Featured Full Stack Project
+          AI Intern
         </h3>
 
         <h4
           className="experience-company"
           style={{
-            color: "#38bdf8",
-            marginBottom: "10px",
+            color: "#8b5cf6",
+            marginBottom: "10px"
           }}
         >
-          AI Shopping Mall Platform
+          Infosys Springboard
         </h4>
 
         <p
           className="experience-date"
           style={{
             color: "#cbd5e1",
-            marginBottom: "25px",
+            marginBottom: "25px"
           }}
         >
-          2026 • React • TypeScript • Vite • Supabase
+          December 2024 – February 2025
         </p>
 
         <p
@@ -261,36 +150,32 @@ export default function Experience() {
           style={{
             lineHeight: "1.8",
             color: "#e2e8f0",
-            marginBottom: "25px",
+            marginBottom: "25px"
           }}
         >
-          Designed and developed a premium Shopping Mall web application
-          featuring secure authentication, digital membership cards,
-          responsive UI, store browsing, booking management, user profile
-          dashboard, and cloud database integration using Supabase. Built
-          with modern React architecture and optimized for desktop and
-          mobile devices.
+          Completed an Artificial Intelligence internship
+          focused on developing intelligent applications,
+          learning AI concepts, integrating APIs, and
+          building real-world solutions using modern
+          software development practices.
         </p>
 
         <div
           className="experience-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
-            gap: "20px",
+            gridTemplateColumns:
+              "repeat(auto-fit,minmax(250px,1fr))",
+            gap: "20px"
           }}
         >
           {[
-            "React + TypeScript + Vite",
-            "Supabase Authentication",
-            "Digital Membership Card",
-            "Store Directory",
-            "Booking System",
-            "Profile Dashboard",
-            "Responsive Mobile UI",
-            "Modern Animations",
-            "Cloud Database",
-            "Premium User Experience",
+            "Worked on AI & Machine Learning Projects",
+            "Developed LLM-based Applications",
+            "REST API Integration",
+            "Data Analysis & Visualization",
+            "Problem Solving & Debugging",
+            "Software Development Lifecycle"
           ].map((item, index) => (
             <div
               key={index}
@@ -298,9 +183,11 @@ export default function Experience() {
               style={{
                 padding: "15px",
                 borderRadius: "15px",
-                background: "rgba(255,255,255,0.05)",
-                border: "1px solid rgba(255,255,255,0.1)",
-                color: "#cbd5e1",
+                background:
+                  "rgba(255,255,255,0.05)",
+                border:
+                  "1px solid rgba(255,255,255,0.1)",
+                color: "#cbd5e1"
               }}
             >
               ✓ {item}
@@ -310,34 +197,8 @@ export default function Experience() {
 
         <div
           style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "35px",
-          }}
-        >
-          <a
-            href="https://shopping-mall-lovat-five.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              padding: "14px 32px",
-              borderRadius: "35px",
-              background:
-                "linear-gradient(90deg,#22c55e,#06b6d4,#8b5cf6)",
-              color: "#fff",
-              textDecoration: "none",
-              fontWeight: 700,
-              transition: "0.3s",
-            }}
-          >
-            🚀 View Live Project
-          </a>
-        </div>
-
-        <div
-          style={{
             marginTop: "30px",
-            textAlign: "center",
+            textAlign: "center"
           }}
         >
           <span
@@ -346,11 +207,11 @@ export default function Experience() {
               padding: "12px 25px",
               borderRadius: "30px",
               background:
-                "linear-gradient(90deg,#22c55e,#06b6d4)",
-              fontWeight: "600",
+                "linear-gradient(90deg,#06b6d4,#8b5cf6)",
+              fontWeight: "600"
             }}
           >
-            React • TypeScript • Vite • Supabase • Responsive Design
+            AI • LLMs • APIs • Data Analytics
           </span>
         </div>
       </div>
