@@ -45,9 +45,10 @@ const projects = [
   {
     title: "AI Shopping Mall",
     desc:
-      "AI-powered shopping recommendation system with intelligent product suggestions, multilingual support and chatbot assistance.",
-    tech: "Python, FastAPI, MongoDB, AI Models",
-    link: ""
+      "Developed a premium full-stack Shopping Mall web application featuring secure authentication, digital membership cards, user profiles, store browsing, booking management, responsive mobile-first design, and real-time cloud database integration using Supabase.",
+    tech: "React, TypeScript, Vite, Supabase, Responsive UI",
+    link:
+      "https://shopping-mall-lovat-five.vercel.app/"
   },
 
   {
@@ -138,6 +139,20 @@ export default function Projects() {
             padding: 12px !important;
           }
         }
+
+        .project-card {
+          transition: all 0.35s ease;
+        }
+
+        .project-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 20px 40px rgba(6,182,212,.15);
+          border-color: rgba(6,182,212,.35);
+        }
+
+        .project-btn:hover {
+          opacity: .9;
+        }
       `}</style>
 
       <h2
@@ -173,8 +188,7 @@ export default function Projects() {
               backdropFilter: "blur(15px)",
               border: "1px solid rgba(255,255,255,.1)",
               borderRadius: "20px",
-              padding: "25px",
-              transition: "0.3s"
+              padding: "25px"
             }}
           >
             <h3
