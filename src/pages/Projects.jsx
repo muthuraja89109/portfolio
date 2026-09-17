@@ -29,9 +29,18 @@ const projects = [
   {
     title: "AI Call Assistant",
     desc:
-      "Voice-enabled AI sales assistant with speech recognition, CRM integration, sentiment analysis and RAG.",
-    tech: "Python, Streamlit, RAG, Groq API",
+      "Voice-enabled AI sales assistant with speech recognition, CRM integration, sentiment analysis and RAG for real-time sales call recommendations and analysis.",
+    tech: "Python, Streamlit, RAG, Sentence Transformers, Groq API, CRM",
     link: ""
+  },
+
+  {
+    title: "ML Prediction API – FastAPI & MLOps",
+    desc:
+      "Production-style machine learning REST API for Iris classification using a Random Forest model. Includes API authentication, input validation, API versioning, Docker containerization, monitoring and automated pytest testing.",
+    tech: "Python, FastAPI, Scikit-learn, Random Forest, Docker, Pytest",
+    link:
+      "https://ml-api-project-8mja.onrender.com/"
   },
 
   {
