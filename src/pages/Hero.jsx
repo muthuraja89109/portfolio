@@ -233,7 +233,7 @@ export default function Hero() {
 
       {/* BUTTONS */}
       <div className="buttons">
-        <a href="/resume.pdf" download className="resume-btn">
+        <a href="/Muthuraja_L_Resume.pdf" download className="resume-btn">
           📄 Download Resume
         </a>
 
